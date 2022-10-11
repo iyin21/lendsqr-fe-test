@@ -1,0 +1,47 @@
+.container{
+    background-color: var(--white);
+    margin-top: 30px;
+    border: 1px solid rgba(33, 63, 125, 0.06);
+    box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+    border-radius: 4px;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    h6{
+        margin-bottom: 30px;
+    }
+    .gridContainer{
+        display: grid;
+	//width: 85vw;
+	margin: 0 auto;
+	grid-template-columns: auto auto auto auto auto;
+	// grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 20px;	
+    
+    h6{
+        margin-top: 8px;
+
+    }
+}
+    .educationGridContainer{
+        display: grid;
+	//width: 85vw;
+	margin: 0 auto;
+	grid-template-columns: auto auto auto auto;
+	// grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 20px;	
+    h6{
+        margin-top: 8px;
+
+    }
+    
+    }
+    .section{
+        border-top: 1px solid rgba(33, 63, 125, 1);
+    
+
+        .title{
+            padding-top: 30px;
+        }
+    }
+}

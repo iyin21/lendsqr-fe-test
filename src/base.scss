@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;500;600;700;800&display=swap');
+@import url('./assets/Fonts/avenir-next/stylesheet.css');
+
+// @font-face {
+//   font-family: 'AvenirNext';
+//   src: url('./assets/Fonts/avenir-next/AvenirNextFont.ttf')format("true-type");
+  
+//   //local("avenir Next"), local("avenir Next")
+// }
+// @font-face {
+//     font-family: 'AvenirNext';
+//     src: local("Avenir NextLTPro-Bold")
+//     url('./assets/Fonts/avenir-next/AvenirNextLTPro-Bold.ttf')format("true-type");
+    
+//     //local("avenir Next"), local("avenir Next")
+// }
+// @font-face {
+//     font-family: 'AvenirNext';
+//     src: url('./assets/Fonts/avenir-next/AvenirNextLTPro-It.ttf')format("true-type");
+
+// }
+// @font-face {
+//     font-family: 'AvenirNext';
+//     src: url('./assets/Fonts/avenir-next/AvenirNextLTPro-Regular.ttf')format("true-type");
+//     //local("avenir Next"), local("avenir Next")
+// }
+
+:root {
+
+    --primary: #213F7D;
+    --white: #ffffff;
+    --blue: #39CDCC;
+    --alt-font-body: 'Avenir Next LT Pro', sans-serif;
+    --red:#E4033B;
+    
+    --secondary: rgba(255, 196, 74, 1);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  // transition: all 0.3s cubic-bezier(0.5, 0, 0.5, 1);
+}
+%h {
+    color: var(--primary);
+  }
+  %h-bold {
+    @extend %h;
+    font-weight: 700;
+  }
+  %h-light {
+    @extend %h;
+    font-weight: 500;
+  }
+  
+  h1,
+  h2 {
+    @extend %h-bold;
+    font-size: 40px;
+  }
+  h3 {
+    @extend %h-light;
+    font-size: 24px;
+  }
+  h4 {
+    @extend %h-light;
+    font-size: 22px;
+  }
+  h5 {
+    @extend %h-light;
+    font-size: 20px;
+  }
+  h6 {
+    @extend %h-light;
+    font-size: 16px;
+  }
+  body, p, li{
+    font-family:'Work Sans', sans-serif;
+    color: var(--primary);
+    font-size: 14px;
+    letter-spacing: 0.2px;
+  }
+  small {
+    font-size: 12px;
+    font-family:'Work Sans', sans-serif;
+  }
+  
+  a {
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--primary);
+  }
+  button {
+    cursor: pointer;
+  }
+  
+  button,
+  input,
+  textarea,
+  select {
+    color: #545F7D;
+
+    &:focus {
+      outline: inherit;
+      border: auto;
+    }
+  }
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    box-shadow: 0 0 0 30px white inset !important;
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+  }
+  
+  input {
+    background: var(--white);
+    padding: 0.5rem;
+    width: 100%;
+    border: none;
+  }

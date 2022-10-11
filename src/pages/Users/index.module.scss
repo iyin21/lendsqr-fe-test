@@ -1,0 +1,27 @@
+.tableContainer{
+    background-color: var(--white);
+    margin-top: 40px;
+    padding: 30px;
+    padding-right: 0;
+}
+.loader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    align-items: center;
+    .showing{
+        display: flex;
+        select{
+            margin-left: 10px;
+            margin-right: 10px;
+            background: rgba(33, 63, 125, 0.1);
+            border-radius: 4px;
+        }
+    }
+}

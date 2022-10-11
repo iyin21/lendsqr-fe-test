@@ -1,0 +1,26 @@
+.cardContainer{
+    display: flex;
+    grid-gap: 25px;	
+    margin-top: 40px;
+    justify-content: "space-between";
+    .card{
+        //margin-left: 10px;
+        padding-top: 20px;
+        padding-left: 30px;
+        height: 160px;
+        flex: 1;
+        
+        background: #FFFFFF;
+        border: 1px solid rgba(33, 63, 125, 0.06);
+        box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+        border-radius: 4px;
+        
+        p{
+            margin-top: 14px;
+        }
+        h5{
+            margin-top: 12px;
+            font-weight: 600;
+        }
+    }
+}

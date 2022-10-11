@@ -1,0 +1,23 @@
+.paginationContainer{
+    display: flex;
+    grid-gap: 10px;
+    
+    .btn{
+        background: rgba(33, 63, 125, 0.1);
+        border-radius: 4px;
+        padding: 6px;
+
+    }
+    .dots{
+        padding-top: 3px;
+    }
+    .pageActive{
+        background: rgba(33, 63, 125, 0.1);
+        border-radius: 4px;
+        padding: 6px;
+
+    }
+    .pageNumbers{
+        padding: 6px;
+    }
+}

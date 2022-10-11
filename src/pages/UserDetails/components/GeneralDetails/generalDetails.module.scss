@@ -1,0 +1,57 @@
+.container{
+    background-color: var(--white);
+    border: 1px solid rgba(33, 63, 125, 0.06);
+    box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+    border-radius: 4px;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 40px;
+    
+    .top_content{
+        display: flex;
+        align-items: center;
+        margin-bottom: 50px;
+        .nameContainer{
+            padding-left: 20px;
+            padding-right: 30px;
+            
+            p{
+                padding-top: 8px;
+                
+            }
+        }
+        .userContainer{
+            border-right: 1px solid #545F7D;
+            border-left: 1px solid #545F7D;
+        
+            padding-right: 30px;
+                padding-left: 30px;
+                padding-bottom: 10px;
+                padding-top: 20px;
+                .starsContainer{
+                    padding-top: 10px;
+                }
+        }
+        .accountContainer{
+            padding-left: 30px;
+            small{
+                padding-top: 10px;
+            }
+        }
+    }
+    .linkContainer{
+        display: flex;
+        justify-content: space-between;
+        .link, .active{
+            cursor: pointer;
+        }
+        .active{
+            color: #39CDCC;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #39CDCC;
+        }
+    }
+}

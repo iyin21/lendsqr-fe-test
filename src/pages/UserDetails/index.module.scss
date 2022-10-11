@@ -1,0 +1,35 @@
+.back{
+    display: flex;
+    cursor: pointer;
+    //align-items: center;
+    p{
+        padding-left: 14px;
+        padding-top: 5px;
+    }
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    .btn{
+        display: flex;
+        .blacklistBtn{
+            height: 40px;
+            align-items: center;
+            padding: 0.7rem;
+            font-weight: 600;
+        }
+        .activateBtn{
+            height: 40px;
+            margin-left: 10px;
+            padding: 0.7rem;
+            font-weight: 600;
+        }
+    }
+}
+.loader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
