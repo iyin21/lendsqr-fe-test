@@ -1,5 +1,4 @@
 import styles from "./generalDetails.module.scss";
-import Avatar from "../../assets/avatar.svg";
 import Star from "../../assets/star.svg";
 import MarkedStar from "../../assets/markedStar.svg";
 import { useState } from "react";

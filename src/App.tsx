@@ -1,6 +1,4 @@
-import React from "react";
 import { Route, Routes } from "react-router-dom";
-import logo from "./logo.svg";
 import Login from "./pages/login";
 import User from "./pages/Users";
 import UserDetails from "./pages/UserDetails";

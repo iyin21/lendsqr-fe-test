@@ -1,9 +1,8 @@
-import { render, fireEvent, screen, waitFor } from "@testing-library/react";
+import { render, screen, waitFor } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import Users from "../index";
 import { BrowserRouter } from "react-router-dom";
 import axios from "axios";
-import { useGetUsers } from "../../../hooks/users.hook";
 import { UserData } from "../../../mocks/data";
 
 jest.mock("axios");
