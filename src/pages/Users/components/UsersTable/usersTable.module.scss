@@ -2,6 +2,7 @@
     font-family:'Work Sans', sans-serif;
     color: var(--primary);
     font-size: 14px;
+    //position: relative;
     .active{
         background: rgba(57, 205, 98, 0.06);
         //opacity: 0.06;
@@ -83,5 +84,17 @@
     
 }
 .filterMenu{
+    position: relative;
+}
+.mantine-Menu-dropdown{
+    right: 50px;
+}
+.dropdown{
+    right: 10px;
+    color: var(--primary);
+    
+    //top:10px;
+}
+td{
     position: relative;
 }

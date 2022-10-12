@@ -81,11 +81,11 @@ const UsersTable = ({ elements }: Props) => {
                 </p>
             </td>
             <td>
-                <Menu transition="fade">
+                <Menu transition="fade" position='left'>
                     <Menu.Target data-testid="menu_icon">
                         <IoEllipsisVerticalSharp />
                     </Menu.Target>
-                    <Menu.Dropdown data-testid="menu_dropdown">
+                    <Menu.Dropdown data-testid="menu_dropdown" className={styles.dropdown} >
                         <Menu.Item icon={<AiOutlineEye size={14} />} onClick={() => navigate(`/user/${element.id}`)}>
                             View Details
                         </Menu.Item>
@@ -134,7 +134,7 @@ const UsersTable = ({ elements }: Props) => {
                                     }}
                                 >
                                     <p style={{ alignItems: 'center', display: 'flex' }}>
-                                        <span>{item}</span>
+                                        <span>{item.toUpperCase()}</span>
                                         <span
                                             style={{
                                                 paddingTop: '5px',

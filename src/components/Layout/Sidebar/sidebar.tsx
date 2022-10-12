@@ -9,7 +9,7 @@ import styles from "./sidebar.module.scss"
 
 const Sidebar =()=>{
     function changeStyle(active: boolean) {
-        //const { handleSignIn, handleSignOut, isAuthenticated } = useGoogle();
+        
         return active
           ? {
             color: "#213F7D",

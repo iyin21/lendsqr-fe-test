@@ -5,7 +5,6 @@ import UsersTable from './components/UsersTable/usersTable';
 import { useState, useMemo } from 'react';
 import { Pagination } from '../../components/Pagination';
 import styles from './index.module.scss';
-import Paginate from '../../components/Paginate/pagination';
 import { Loader } from '@mantine/core';
 
 const User = () => {

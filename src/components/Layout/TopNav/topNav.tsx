@@ -6,7 +6,7 @@ import Avatar from "./assets/avatar.svg";
 import DownArrow from "./assets/downArrow.svg";
 import styles from "./topNav.module.scss";
 import { HiMenuAlt2 } from "react-icons/hi";
-import { Dispatch, SetStateAction, useState, useEffect } from "react";
+import { Dispatch, SetStateAction,  } from "react";
 
 interface TopNavInterface {
   setOpenSideBar: Dispatch<SetStateAction<boolean>>;

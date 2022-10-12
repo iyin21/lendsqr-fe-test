@@ -1,15 +1,15 @@
-import styles from "./personalInformation.module.scss";
-import { UserResponse } from "../../../../types/user.type";
+import styles from './personalInformation.module.scss';
+import { UserResponse } from '../../../../types/user.type';
 
-const PersonalInformation =({data}:{data?:UserResponse})=>{
-    return(
+const PersonalInformation = ({ data }: { data?: UserResponse }) => {
+    return (
         <div className={styles.container} data-testid="personalContainer">
             <div>
                 <h6>Personal Information</h6>
                 <div className={styles.gridContainer}>
                     <div className={styles.grid}>
                         <small>FULL NAME</small>
-                        <h6>{data?.profile.firstName + " "+ data?.profile.lastName}</h6>
+                        <h6>{data?.profile.firstName + ' ' + data?.profile.lastName}</h6>
                     </div>
                     <div className={styles.grid}>
                         <small>PHONE NUMBER</small>
@@ -39,7 +39,6 @@ const PersonalInformation =({data}:{data?:UserResponse})=>{
                         <small>TYPE OF RESIDENCE</small>
                         <h6>Parent&apos;s Apartment</h6>
                     </div>
-                    
                 </div>
             </div>
             <div className={styles.section}>
@@ -67,13 +66,12 @@ const PersonalInformation =({data}:{data?:UserResponse})=>{
                     </div>
                     <div className={styles.grid}>
                         <small>MONTHLY INCOME</small>
-                        <h6>₦{data?.education.monthlyIncome[0].toLocaleString()+"-  ₦"+ data?.education.monthlyIncome[1].toLocaleString()}</h6>
+                        <h6>₦{data?.education.monthlyIncome[0].toLocaleString() + '-  ₦' + data?.education.monthlyIncome[1].toLocaleString()}</h6>
                     </div>
                     <div className={styles.grid}>
                         <small>LOAN REPAYMENT</small>
                         <h6>{data?.education.loanRepayment.toLocaleString()}</h6>
                     </div>
-                   
                 </div>
             </div>
 
@@ -92,7 +90,6 @@ const PersonalInformation =({data}:{data?:UserResponse})=>{
                         <small>INSTAGRAM</small>
                         <h6>{data?.socials.instagram}</h6>
                     </div>
-                    
                 </div>
             </div>
             <div className={styles.section}>
@@ -100,7 +97,7 @@ const PersonalInformation =({data}:{data?:UserResponse})=>{
                 <div className={styles.gridContainer}>
                     <div className={styles.grid1}>
                         <small>FULL NAME</small>
-                        <h6>{data?.guarantor.firstName+ " "+ data?.guarantor.lastName}</h6>
+                        <h6>{data?.guarantor.firstName + ' ' + data?.guarantor.lastName}</h6>
                     </div>
                     <div className={styles.grid}>
                         <small>PHONE NUMBER</small>
@@ -114,11 +111,29 @@ const PersonalInformation =({data}:{data?:UserResponse})=>{
                         <small>RELATIONSHIP</small>
                         <h6>Sister</h6>
                     </div>
-                    
                 </div>
             </div>
-            
+            <div className={`${styles.section} ${styles.lastSection}`}>
+                <div className={styles.gridContainer}>
+                    <div className={styles.grid1}>
+                        <small>FULL NAME</small>
+                        <h6>{data?.guarantor.firstName + ' ' + data?.guarantor.lastName}</h6>
+                    </div>
+                    <div className={styles.grid}>
+                        <small>PHONE NUMBER</small>
+                        <h6>{data?.guarantor.phoneNumber}</h6>
+                    </div>
+                    <div className={styles.grid}>
+                        <small>EMAIL ADDRESS</small>
+                        <h6>{data?.email}</h6>
+                    </div>
+                    <div className={styles.grid}>
+                        <small>RELATIONSHIP</small>
+                        <h6>Sister</h6>
+                    </div>
+                </div>
+            </div>
         </div>
-    )
-}
+    );
+};
 export default PersonalInformation;

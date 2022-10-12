@@ -46,11 +46,14 @@
     
     }
     .section{
-        border-top: 1px solid #fafbfc;
+        border-top: 1px solid rgba(33, 63, 125, 0.1);
     
 
         .title{
             padding-top: 30px;
         }
+    }
+    .lastSection{
+        padding-top: 70px;
     }
 }
