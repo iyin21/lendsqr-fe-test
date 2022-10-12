@@ -7,6 +7,7 @@
     padding-top: 30px;
     padding-left: 30px;
     padding-right: 30px;
+    
     h6{
         margin-bottom: 30px;
     }
@@ -17,6 +18,10 @@
 	grid-template-columns: auto auto auto auto auto;
 	// grid-template-columns: 1fr 1fr 1fr 1fr;
 	grid-gap: 20px;	
+    @media screen and (max-width: 700px) {
+        grid-template-columns: auto auto;
+       
+   }
     
     h6{
         margin-top: 8px;
@@ -30,6 +35,10 @@
 	grid-template-columns: auto auto auto auto;
 	// grid-template-columns: 1fr 1fr 1fr 1fr;
 	grid-gap: 20px;	
+    @media screen and (max-width: 700px) {
+        grid-template-columns: auto auto auto;
+       
+   }
     h6{
         margin-top: 8px;
 
@@ -37,7 +46,7 @@
     
     }
     .section{
-        border-top: 1px solid rgba(33, 63, 125, 1);
+        border-top: 1px solid #fafbfc;
     
 
         .title{

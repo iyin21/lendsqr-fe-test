@@ -1,24 +1,51 @@
 nav{
     display: flex;
+    width : 100%;
     //justify-content: space-between;
     position: sticky;
     z-index: 20;
+    top:0;
     //height: 150px;
-    top: 0;
+    
     align-items: center;
     box-shadow: 3px 0px 20px rgba(0, 0, 0, 0.04);
     padding-top: 20px;
     padding-bottom:20px;
     padding-left: 30px;
     padding-right: 100px;
+    @media screen and (max-width: 700px) {
+        padding-left: 10px;
+        padding-right: 0;
+        
+    }
     
+      .logo{
+        display: block;
+      }
+      .menu{
+        display: none;
+      }
     .input_container{
         padding-left: 150px;
+        @media screen and (max-width: 1200px) {
+            padding-left: 50px;
+            
+        }
+        @media screen and (max-width: 600px) {
+             padding-left: 10px;
+            
+        }
         .search{
             width: 250px;
             height: 45px;
             border-radius: 8px;
             border-right: none;
+            @media screen and (max-width: 600px) {
+                
+                    width: 200px;
+                    height: 40px;
+            
+            }
             .search_img{
                 background-color:  var(--blue);
                //height: 45px;
@@ -39,14 +66,31 @@ nav{
         display: flex;
         padding-left: 350px;
         align-items: center;
+        @media screen and (max-width: 1250px) {
+            padding-left: 150px;
+            
+        }
+        @media screen and (max-width: 900px) {
+            padding-left: 10px;
+        }
+        @media screen and (max-width: 700px) {
+            padding-left: 20px;
+        }
         a{
             text-decoration: underline;
         }
         .bell{
             padding-left: 50px;
+            @media screen and (max-width: 600px) {
+                padding-left: 10px;
+               
+           }
         }
         .avatar{
             padding-left: 30px;
+            @media screen and (max-width: 900px) {
+                padding-left: 10px;
+            }
         }
         p{
             padding-left: 10px;
@@ -54,3 +98,23 @@ nav{
     }
     
 }
+@media screen and (max-width: 900px) {
+    nav{
+        
+        position: relative;
+
+    .logo{
+        display:none;
+    }
+    .menu{
+        display: block;
+      }
+      .avatar{
+        padding-left: 10px;
+    }
+    p{
+        display: none;
+    }
+    }
+    
+  }

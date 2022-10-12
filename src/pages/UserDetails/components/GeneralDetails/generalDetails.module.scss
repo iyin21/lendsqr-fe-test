@@ -8,10 +8,16 @@
     padding-right: 30px;
     margin-top: 40px;
     
+    
     .top_content{
         display: flex;
         align-items: center;
         margin-bottom: 50px;
+        @media screen and (max-width: 700px) {
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-gap: 10px;
+        }
         .nameContainer{
             padding-left: 20px;
             padding-right: 30px;
@@ -22,8 +28,8 @@
             }
         }
         .userContainer{
-            border-right: 1px solid #545F7D;
-            border-left: 1px solid #545F7D;
+            border-right: 1px solid #f9f9f9;
+            border-left: 1px solid #f9f9f9;
         
             padding-right: 30px;
                 padding-left: 30px;
@@ -43,6 +49,11 @@
     .linkContainer{
         display: flex;
         justify-content: space-between;
+        @media screen and (max-width: 700px) {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-gap: 10px;
+        }
         .link, .active{
             cursor: pointer;
         }
@@ -52,6 +63,11 @@
             padding-right: 10px;
             padding-bottom: 10px;
             border-bottom: 2px solid #39CDCC;
+            @media screen and (max-width: 700px) {
+                padding-left: 2px;
+            padding-right: 2px;
+               
+           }
         }
     }
 }

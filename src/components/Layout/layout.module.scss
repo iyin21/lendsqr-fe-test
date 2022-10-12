@@ -34,6 +34,7 @@
         display: flex;
         height: 86%;
         
+        
         .sideBar{
             overflow-y: scroll;
         
@@ -46,11 +47,42 @@
         main{
             overflow-y: scroll;
             width: 100%; 
-            background-color: #E5E5E5;
+            background-color: rgba(251,251,251,255);
             //background-color: red;
             padding: 60px; 
-            
-            //position: block;
+            @media screen and (max-width: 1250px) {
+                padding: 20px; 
+                
+            }
         }
     }
+}
+.closeMenu{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.sideBar{
+    overflow-y: scroll;
+
+    //position: fixed;
+    height: 90%;
+    display: block;
+    left: 0;
+    
+}
+.info_container{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    .avatar{
+        padding-left: 30px;
+    }
+    p{
+        padding-left: 10px;
+    }
+}
+hr{
+    color: #f9f9f9;
 }
