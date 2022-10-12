@@ -31,24 +31,24 @@ test("shows users Page", async () => {
   expect(tableContainer).toBeInTheDocument();
   //});
   await waitFor(() => {
-    expect(screen.getByText("organization")).toBeInTheDocument();
+    expect(screen.getByText("ORGANIZATION")).toBeInTheDocument();
   });
   await waitFor(() => {
-    expect(screen.getByText("Username")).toBeInTheDocument();
+    expect(screen.getByText("USERNAME")).toBeInTheDocument();
   });
   await waitFor(() => {
-    expect(screen.getByText("Email")).toBeInTheDocument();
+    expect(screen.getByText("EMAIL")).toBeInTheDocument();
   });
   await waitFor(() => {
-    expect(screen.getByText("Phone number")).toBeInTheDocument();
+    expect(screen.getByText("PHONE NUMBER")).toBeInTheDocument();
   });
   await waitFor(() => {
-    expect(screen.getByText("Date joined")).toBeInTheDocument();
+    expect(screen.getByText("DATE JOINED")).toBeInTheDocument();
   });
   await waitFor(() => {
-    expect(screen.getByText("Status")).toBeInTheDocument();
+    expect(screen.getByText("STATUS")).toBeInTheDocument();
   });
-});
+},9000);
 
 test("if filter dropdown works", async () => {
   (axios.get as jest.Mock).mockResolvedValue({ data: UserData });

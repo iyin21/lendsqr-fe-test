@@ -68,7 +68,10 @@ test("shows User details Page", async () => {
       });
   });
   await waitFor(() => {
-    expect(screen.getByText("Johnathon Hane")).toBeInTheDocument();
+    screen.getAllByText("Johnathon Hane").forEach((item) => {
+      expect(item).toBeInTheDocument();
+    });
+    
   });
 });
 
