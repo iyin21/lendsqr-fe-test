@@ -26,6 +26,7 @@ nav{
       }
     .input_container{
         padding-left: 150px;
+        
         @media screen and (max-width: 1200px) {
             padding-left: 50px;
             
@@ -35,10 +36,12 @@ nav{
             
         }
         .search{
+            display: flex;
+            justify-content: space-between;
             width: 250px;
             height: 45px;
             border-radius: 8px;
-            border-right: none;
+            border: 2px solid rgba(84, 95, 125, 0.15);
             @media screen and (max-width: 600px) {
                 
                     width: 200px;
@@ -47,15 +50,17 @@ nav{
             }
             .search_img{
                 background-color:  var(--blue);
-               //height: 45px;
                border-top-right-radius: 8px;
-               border-bottom-right-radius:8px ;
+               border-bottom-right-radius:8px;
                 align-items: center;
-                padding-top: 15px;
-                padding-bottom: 13px;
-                padding-left: 20px;
-                padding-right: 20px;
-                 max-height: 45px; 
+                justify-content: center;
+                display: flex;
+                width: 60px;
+                //padding-top: 15px;
+                //padding-bottom: 13px;
+                // padding-left: 20px;
+                // padding-right: 20px;
+                 //max-height: 45px; 
                  //padding: 13px;
                 
             }
