@@ -2,10 +2,6 @@
   "name": "lendsqr-fe-test",
   "version": "0.1.0",
   "private": true,
-  "lint": "eslint .",
-  "lint:fix": "eslint --fix",
-  "lint-staged": "lint-staged --config .lintstagedrc.json",
-  "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc",
   "dependencies": {
     "@babel/preset-env": "^7.19.4",
     "@mantine/core": "^5.5.4",
@@ -35,7 +31,11 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --transformIgnorePatterns node_modules/(?!axios/)/",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix",
+    "lint-staged": "lint-staged --config .lintstagedrc.json",
+    "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc"
   },
   "eslintConfig": {
     "extends": [

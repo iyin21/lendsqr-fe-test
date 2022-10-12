@@ -2,6 +2,41 @@
     font-family:'Work Sans', sans-serif;
     color: var(--primary);
     font-size: 14px;
+    .active{
+        background: rgba(57, 205, 98, 0.06);
+        //opacity: 0.06;
+        border-radius: 100px;
+        color: #39CD62;
+        display: flex;
+        justify-content: center;
+        padding: 6px;
+    }
+    .in_active{
+        background: rgba(84, 95, 125, 0.06);
+        //opacity: 0.06;
+        border-radius: 100px;
+        color: rgba(84, 95, 125, 1);
+        display: flex;
+        justify-content: center;
+        padding: 6px;
+
+    }
+    .pending{
+        background: rgba(233, 178, 0, 0.1);
+        //opacity: 0.06;
+        border-radius: 100px;
+        color: #E9B200;
+        display: flex;
+        justify-content: center;
+        padding: 6px;
+    }
+    .blacklisted{
+        background: rgba(228, 3, 59, 0.1);
+        //opacity: 0.1;
+        border-radius: 100px;
+        color: #E4033B;
+        padding: 6px;
+    }
     
 }
 .filterContainer{
@@ -10,6 +45,7 @@
     box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
     border-radius: 4px;
     position: absolute;
+    top: 50px;
     //height: 100vh;
     //overflow-y: scroll;
     width: 270px;
