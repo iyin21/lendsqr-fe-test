@@ -4,7 +4,7 @@ import styles from './layout.module.scss';
 import { Drawer } from '@mantine/core';
 import useWindowSize from '../../hooks/useWindowSize';
 import { useState } from 'react';
-import Avatar from './TopNav/assets/avatar.svg';
+import Avatar from './TopNav/assets/avatar.png';
 import DownArrow from './TopNav/assets/downArrow.svg';
 import { IoCloseOutline } from 'react-icons/io5';
 
