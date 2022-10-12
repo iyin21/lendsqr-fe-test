@@ -10,13 +10,21 @@
     .leftContent{
         padding-left: 95px;
         flex: 1;
+        flex-shrink: 1;
         //flex-grow: 1;
         .logo{
             margin-top: 100px;
         }
-        img{
+        .heroImage{
             margin-top: 100px;
+            @media screen and (max-width: 1200px) {
+                width:500px;
+            }
+            @media screen and (max-width: 1000px) {
+                width:400px;
+            }
         }
+        
         @media screen and (max-width: 900px) {
             display: none;
         }

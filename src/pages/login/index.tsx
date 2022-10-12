@@ -2,7 +2,6 @@ import LendsqrLogo from "../../assets/icons/lendsqr.svg";
 import styles from "./index.module.scss";
 import Input from "../../components/Input/input";
 import Button from "../../components/Button/button";
-import { Routes, Route, Outlet, Link } from "react-router-dom";
 import LoginImg from "./assets/loginImg.png";
 import { useNavigate } from "react-router-dom";
 
@@ -13,8 +12,8 @@ const Login = () => {
       <div className={styles.leftContent}>
         <img src={LendsqrLogo} className={styles.logo} alt="Lendsqr" />
 
-        <div>
-          <img src={LoginImg} alt="Image" />
+        <div >
+          <img src={LoginImg} alt="Image" className={styles.heroImage} />
         </div>
       </div>
       <div className={styles.rightContent}>

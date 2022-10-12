@@ -86,7 +86,7 @@ const UsersTable = ({ elements }: Props) => {
                         <IoEllipsisVerticalSharp />
                     </Menu.Target>
                     <Menu.Dropdown data-testid="menu_dropdown" className={styles.dropdown} >
-                        <Menu.Item icon={<AiOutlineEye size={14} />} onClick={() => navigate(`/user/${element.id}`)}>
+                        <Menu.Item icon={<AiOutlineEye size={14} />} onClick={() =>{localStorage.setItem('userDetails', JSON.stringify(element)); navigate(`/user/${element.id}`)}}>
                             View Details
                         </Menu.Item>
                         <Menu.Item icon={<img src={BlackListUser} alt="" />}>Blacklist User</Menu.Item>
@@ -131,6 +131,7 @@ const UsersTable = ({ elements }: Props) => {
                                     style={{
                                         borderBottom: 'none',
                                         fontSize: '12px'
+                                        
                                     }}
                                 >
                                     <p style={{ alignItems: 'center', display: 'flex' }}>

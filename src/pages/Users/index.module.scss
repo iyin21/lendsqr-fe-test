@@ -3,7 +3,7 @@
     margin-top: 40px;
     padding: 30px;
     padding-right: 0;
-    width: 100%;
+    overflow-x: scroll;
     @media screen and (max-width: 1200px) {
         overflow-x: scroll;
     }
