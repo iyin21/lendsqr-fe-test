@@ -47,7 +47,7 @@ Each folder within the components folder has it's respective readmes which shows
 
 #### hooks.
 
-This contains hooks general to the platform, broken down into it's respective locations eg. leadchef, admin etc.
+This contains of the platform, broken down into it's respective locations eg. pagination, user etc.
 
 #### Mocks.
 
