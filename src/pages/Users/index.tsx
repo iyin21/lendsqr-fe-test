@@ -2,13 +2,13 @@ import Layout from '../../components/Layout/layout';
 import Card from './components/Card/card';
 import { useGetUsers } from '../../hooks/users.hook';
 import UsersTable from './components/UsersTable/usersTable';
-import { useState, useMemo } from 'react';
+import { useState, useMemo, } from 'react';
 import { Pagination } from '../../components/Pagination';
 import styles from './index.module.scss';
 import { Loader } from '@mantine/core';
 
 const User = () => {
-    const { isLoading, userData } = useGetUsers();
+    const { isLoading, userData, error } = useGetUsers();
     const [activePage, setPage] = useState<number>(1);
     const [pageSize, setPageSize] = useState<number>(10);
     const handleChange = (pageNumber: number) => {
@@ -21,11 +21,17 @@ const User = () => {
     }, [activePage, userData]);
 
     const options = [10, 20, 30, 40, 50, 60, 70, 80, 90];
+
     return (
         <Layout>
             {isLoading ? (
                 <div className={styles.loader}>
                     <Loader />
+                </div>
+            ) : error ? (
+                <div className={styles.loader}>
+                    <p>{error}! Please try again</p>
+                    
                 </div>
             ) : (
                 <div>

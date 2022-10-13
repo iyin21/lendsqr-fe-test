@@ -81,12 +81,18 @@ const UsersTable = ({ elements }: Props) => {
                 </p>
             </td>
             <td>
-                <Menu transition="fade" position='left'>
+                <Menu transition="fade" position="left">
                     <Menu.Target data-testid="menu_icon">
                         <IoEllipsisVerticalSharp />
                     </Menu.Target>
-                    <Menu.Dropdown data-testid="menu_dropdown" className={styles.dropdown} >
-                        <Menu.Item icon={<AiOutlineEye size={14} />} onClick={() =>{localStorage.setItem('userDetails', JSON.stringify(element)); navigate(`/user/${element.id}`)}}>
+                    <Menu.Dropdown data-testid="menu_dropdown" className={styles.dropdown}>
+                        <Menu.Item
+                            icon={<AiOutlineEye size={14} />}
+                            onClick={() => {
+                                localStorage.setItem('userDetails', JSON.stringify(element));
+                                navigate(`/user/${element.id}`);
+                            }}
+                        >
                             View Details
                         </Menu.Item>
                         <Menu.Item icon={<img src={BlackListUser} alt="" />}>Blacklist User</Menu.Item>
@@ -131,7 +137,6 @@ const UsersTable = ({ elements }: Props) => {
                                     style={{
                                         borderBottom: 'none',
                                         fontSize: '12px'
-                                        
                                     }}
                                 >
                                     <p style={{ alignItems: 'center', display: 'flex' }}>
@@ -150,7 +155,12 @@ const UsersTable = ({ elements }: Props) => {
                                     </p>
                                 </th>
                             ))}
-                            <th></th>
+                            <th
+                                style={{
+                                    borderBottom: 'none',
+                                    fontSize: '12px'
+                                }}
+                            ></th>
                         </>
                     </tr>
                 </thead>

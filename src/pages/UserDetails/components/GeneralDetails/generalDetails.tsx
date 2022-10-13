@@ -12,7 +12,7 @@ const GeneralDetails = ({data}:{data?:UserResponse}) => {
   return (
     <div className={styles.container} data-testid="generalContainer">
       <div className={styles.top_content}>
-        <img src={data?.profile.avatar} width={100} height={100} alt="" />
+        <img src={data?.profile.avatar} width={100} height={100} className={styles.avatar} alt="" />
         <div className={styles.nameContainer}>
           <h4>{data?.profile.firstName+ " "+data?.profile.lastName}</h4>
           <p>LSQFf587g90</p>

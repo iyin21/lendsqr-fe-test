@@ -11,17 +11,21 @@ import { useNavigate } from 'react-router-dom';
 
 const UserDetails = () => {
     const { id: id } = useParams<{ id: string }>();
-    const { isLoading, userData } = useGetUserDetails({ id: id || '' });
+    const { isLoading, userData, error } = useGetUserDetails({ id: id || '' });
     const navigate = useNavigate();
 
     const storedUserData = localStorage.getItem('userDetails');
-    
+
     const storedData = storedUserData && JSON.parse(storedUserData);
     return (
         <Layout>
             {isLoading ? (
                 <div className={styles.loader}>
                     <Loader />
+                </div>
+            ) : error ? (
+                <div className={styles.loader}>
+                    <p>{error}! Please try again</p>
                 </div>
             ) : (
                 <div>
